@@ -3,4 +3,3 @@ kind: BGPAdvertisement
 metadata:
   name: bgpadvert
   namespace: metallb-system
-  
