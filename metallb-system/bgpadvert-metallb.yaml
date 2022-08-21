@@ -3,6 +3,4 @@ kind: BGPAdvertisement
 metadata:
   name: bgpadvert
   namespace: metallb-system
-spec:
-  ipAddressPools:
-  - main-pool
+  
