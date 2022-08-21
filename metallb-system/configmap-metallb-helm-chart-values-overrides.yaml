@@ -278,7 +278,7 @@ data:
       extraEnvVars: []
       ## @param controller.extraEnvVarsCM Name of existing ConfigMap containing extra env vars for Metallb controller nodes
       ##
-      extraEnvVarsCM: "metallb-config"
+      extraEnvVarsCM: ""
       ## @param controller.extraEnvVarsSecret Name of existing Secret containing extra env vars for Metallb controller nodes
       ##
       extraEnvVarsSecret: ""

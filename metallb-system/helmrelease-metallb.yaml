@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: metallb
-      version: 2.x
+      version: 4.x
       sourceRef:
         kind: HelmRepository
         name: bitnami
