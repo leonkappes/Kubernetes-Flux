@@ -48,7 +48,7 @@ data:
         # renewal of a leadership.
         # retryPeriod: 15s
     
-    installCRDs: false
+    installCRDs: true
     
     replicaCount: 1
     
