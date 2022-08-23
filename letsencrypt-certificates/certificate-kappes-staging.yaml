@@ -4,7 +4,6 @@ metadata:
   name: letsencrypt-wildcard-cert-kappes.space-staging
   namespace: letsencrypt-certificates
 spec:
-  # secretName doesn't have to match the certificate name, but it may as well, for simplicity!
   secretName: letsencrypt-wildcard-cert-kappes.space-staging
   issuerRef:
     name: letsencrypt-staging
