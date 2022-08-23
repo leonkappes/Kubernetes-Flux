@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: letsencrypt-wildcard-cert-kappes.space
+  namespace: letsencrypt-certificates
+spec:
+  secretName: letsencrypt-wildcard-cert-kappes.space
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+  - "kappes.space"
+  - "*.kappes.space"
