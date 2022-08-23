@@ -11,7 +11,8 @@ spec:
     solvers:
     - selector:
         dnsZones:
-          - "example.com"
+          - "kappes.space"
+          - "elsetech.cloud"
       dns01:
         cloudflare:
           email: acme@kappes.space

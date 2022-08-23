@@ -12,6 +12,10 @@ spec:
         kind: HelmRepository
         name: jetstack
         namespace: flux-system
+  install:
+    crds: CreateReplace
+  upgrade:
+    crds: CreateReplace
   interval: 15m
   timeout: 5m
   releaseName: cert-manager
