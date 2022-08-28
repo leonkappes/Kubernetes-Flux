@@ -99,7 +99,7 @@ data:
           ## Use Explicit TLS mode, requires that 'ssl' is enabled.
           #explicitTLS: false
           ## SMTP port. Defaults to 25 without SSL, 587 with SSL.
-          #port: 587
+          port: 465
           ## SMTP Authentication Mechanisms. Comma-separated options: 'Plain', 'Login' and 'Xoauth2'. Defaults to 'Plain'.
           #authMechanism: Plain
           ## Hostname to be sent for SMTP HELO. Defaults to pod name.
