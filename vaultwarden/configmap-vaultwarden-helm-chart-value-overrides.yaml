@@ -193,7 +193,7 @@ data:
         size: 1Gi
         accessMode: ReadWriteOnce
         ## Persistent Volume storage class
-        # storageClass: "-"
+        storageClass: "longhorn"
         ## Use existing Persistent Volume Claim
         # existingClaim:
 
