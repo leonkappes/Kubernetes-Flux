@@ -160,7 +160,7 @@ data:
       ingress:
         enabled: true
         # className: nginx
-        host: ""
+        host: "bitwarden.kappes.space"
         annotations: 
           traefik.ingress.kubernetes.io/router.entrypoints: websecure
           traefik.ingress.kubernetes.io/router.tls: "true"
