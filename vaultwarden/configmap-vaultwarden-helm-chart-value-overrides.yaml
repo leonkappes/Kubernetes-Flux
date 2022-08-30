@@ -248,7 +248,8 @@ data:
         runAsUser: 65534
         runAsGroup: 65534
 
-      strategy: {}
+      strategy:
+        type: Recreate
 
       resources: {}
         # We usually recommend not to specify default resources and to leave this as a conscious
