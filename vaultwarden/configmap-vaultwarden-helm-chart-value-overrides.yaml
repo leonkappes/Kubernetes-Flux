@@ -94,10 +94,12 @@ data:
           from: "no-reply@kappes.space"
           ## SMTP sender name, defaults to 'Vaultwarden'.
           #fromName: ""
-          # Enable SSL connection.
-          ssl: true
-          ## Use Explicit TLS mode, requires that 'ssl' is enabled.
-          #explicitTLS: false
+          # Enable secure SSL connection. Options are: "starttls", "force_tls" and "off"
+          # Users migrating from 1.24 or lower using ssl/explicitTLS settings:
+          #   ssl = false -> "off"
+          #   ssl = true and explicitTLS = false -> "starttls"
+          #   ssl = true and explicitTLS = true -> "force_tls"
+          security: starttls
           ## SMTP port. Defaults to 25 without SSL, 587 with SSL.
           port: 465
           ## SMTP Authentication Mechanisms. Comma-separated options: 'Plain', 'Login' and 'Xoauth2'. Defaults to 'Plain'.
