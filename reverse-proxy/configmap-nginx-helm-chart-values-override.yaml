@@ -548,7 +548,7 @@ data:
         ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
         ##
         nodePorts:
-          http: ""
+          http: "80"
           https: ""
         ## @param service.targetPort [object] Target port reference value for the Loadbalancer service types can be specified explicitly.
         ## Listeners for the Loadbalancer can be custom mapped to the http or https service.
