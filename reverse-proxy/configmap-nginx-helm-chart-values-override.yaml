@@ -2,8 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   creationTimestamp: null
-  name: vaultwarden-helm-chart-value-overrides
-  namespace: vaultwarden
+  name: configmap-nginx-helm-chart-values-override
+  namespace: reverse-proxy
 data:
   values.yaml: |-
       # Copyright VMware, Inc.
