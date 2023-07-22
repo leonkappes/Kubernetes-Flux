@@ -14,7 +14,7 @@ spec:
         namespace: flux-system
   interval: 15m
   timeout: 5m
-  releaseName: reverse-proxz
+  releaseName: reverse-proxy
   valuesFrom:
   - kind: ConfigMap
     name: configmap-nginx-helm-chart-values-override
