@@ -240,7 +240,7 @@ data:
       ## @param containerPorts.https Sets https port inside NGINX container
       ##
       containerPorts:
-        http: 80
+        http: 8080
         https: ""
       ## @param extraContainerPorts Array of additional container ports for the Nginx container
       ## e.g:
@@ -505,7 +505,7 @@ data:
       ## PHP-FPM example server block:
       serverBlock: |-
         server {
-          listen 0.0.0.0:80;
+          listen 0.0.0.0:8080;
               
           location / {
               proxy_pass http://192.168.178.200:8123;
