@@ -508,7 +508,7 @@ data:
           listen 0.0.0.0:8080;
               
           location / {
-              proxy_pass http://192.168.178.200:8123$request_uri;
+              proxy_pass http://192.168.178.205:8123$request_uri;
               add_header       X-Served-By $host;
               proxy_set_header Host $host;
               proxy_set_header X-Forwarded-Scheme $scheme;
