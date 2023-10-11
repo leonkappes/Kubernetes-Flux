@@ -506,9 +506,46 @@ data:
       serverBlock: |-
         server {
           listen 0.0.0.0:8080;
+          server_name home.kappes.space;
               
           location / {
               proxy_pass http://192.168.178.205:8123$request_uri;
+              add_header       X-Served-By $host;
+              proxy_set_header Host $host;
+              proxy_set_header X-Forwarded-Scheme $scheme;
+              proxy_set_header X-Forwarded-Proto  $scheme;
+              proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
+              proxy_set_header X-Real-IP          $remote_addr;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection $http_connection;
+              proxy_http_version 1.1;
+          }
+        }
+
+        server {
+          listen 0.0.0.0:8080;
+          server_name cloud.kappes.space;
+              
+          location / {
+              proxy_pass http://192.168.6.21:8080$request_uri;
+              add_header       X-Served-By $host;
+              proxy_set_header Host $host;
+              proxy_set_header X-Forwarded-Scheme $scheme;
+              proxy_set_header X-Forwarded-Proto  $scheme;
+              proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
+              proxy_set_header X-Real-IP          $remote_addr;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection $http_connection;
+              proxy_http_version 1.1;
+          }
+        }
+
+        server {
+          listen 0.0.0.0:8080;
+          server_name paperless.kappes.space;
+
+          location / {
+              proxy_pass http://192.168.6.21:8010$request_uri;
               add_header       X-Served-By $host;
               proxy_set_header Host $host;
               proxy_set_header X-Forwarded-Scheme $scheme;
@@ -654,7 +691,9 @@ data:
         ## - name: nginx.local
         ##   path: /
         ##
-        extraHosts: []
+        extraHosts:
+          - name: cloud.kappes.space
+          - name: paperless.kappes.space
         ## @param ingress.extraPaths Any additional arbitrary paths that may need to be added to the ingress under the main host.
         ## For example: The ALB ingress controller requires a special rule for handling SSL redirection.
         ## extraPaths:
