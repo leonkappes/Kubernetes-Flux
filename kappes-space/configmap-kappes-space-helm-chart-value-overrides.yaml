@@ -25,7 +25,7 @@ data:
       enabled: true
       annotations: {}
       # Only CLusterIP and LoadBalancer are supported
-      type: LoadBalancer
+      type: ClusterIP
       externalPort: 80
 
     ingress:
