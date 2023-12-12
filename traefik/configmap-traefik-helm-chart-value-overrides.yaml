@@ -155,7 +155,7 @@ data:
     ingressRoute:
       dashboard:
         # -- Create an IngressRoute for the dashboard
-        enabled: true
+        enabled: false
         # -- Additional ingressRoute annotations (e.g. for kubernetes.io/ingress.class)
         annotations: {}
         # -- Additional ingressRoute labels (e.g. for filtering IngressRoute by custom labels)
