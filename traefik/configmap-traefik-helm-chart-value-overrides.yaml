@@ -666,8 +666,9 @@ data:
         #   insecure: false
         #
         # Enable the Proxy Protocol header parsing for the entry point
-        # proxyProtocol:
-        #   trustedIPs: []
+         proxyProtocol:
+           trustedIPs: 
+             - "0.0.0.0/0"
       #  #   insecure: false
       websecure:
         ## -- Enable this entrypoint as a default entrypoint. When a service doesn't explicitly set an entrypoint it will only use this entrypoint.
@@ -675,7 +676,7 @@ data:
         port: 8443
         # hostPort: 8443
         # containerPort: 8443
-        expose: false
+        expose: true
         exposedPort: 443
         ## -- Different target traefik port on the cluster, useful for IP type LB
         # targetPort: 80
