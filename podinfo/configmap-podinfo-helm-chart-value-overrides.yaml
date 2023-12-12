@@ -111,8 +111,8 @@ data:
       enabled: true
       className: ""
       annotations:
-        traefik.ingress.kubernetes.io/router.entrypoints: websecure
-        traefik.ingress.kubernetes.io/router.tls: "true"
+        traefik.ingress.kubernetes.io/router.entrypoints: web
+        #traefik.ingress.kubernetes.io/router.tls: "true"
         # kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       hosts:
@@ -120,10 +120,10 @@ data:
           paths:
             - path: /
               pathType: ImplementationSpecific
-      tls:
-        - secretName: letsencrypt-wildcard-cert-kappes.space
-          hosts:
-            - ssh.kappes.space
+      #tls:
+      #  - secretName: letsencrypt-wildcard-cert-kappes.space
+      #    hosts:
+      #      - ssh.kappes.space
 
     linkerd:
       profile:

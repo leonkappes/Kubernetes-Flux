@@ -675,8 +675,8 @@ data:
       ##   cert-manager.io/cluster-issuer: cluster-issuer-name
       ##
       annotations:
-        traefik.ingress.kubernetes.io/router.entrypoints: websecure
-        traefik.ingress.kubernetes.io/router.tls: "true"
+        traefik.ingress.kubernetes.io/router.entrypoints: web
+        #traefik.ingress.kubernetes.io/router.tls: "true"
       ## @param ingress.ingressClassName Set the ingerssClassName on the ingress record for k8s 1.18+
       ## This is supported in Kubernetes 1.18+ and required if you have more than one IngressClass marked as the default for your cluster .
       ## ref: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
@@ -712,10 +712,10 @@ data:
       ##     - nginx.local
       ##   secretName: nginx.local-tls
       ##
-      extraTls:
-        - secretName: letsencrypt-wildcard-cert-kappes.space
-          hosts:
-            - home.kappes.space
+      #extraTls:
+      #  - secretName: letsencrypt-wildcard-cert-kappes.space
+      #    hosts:
+      #      - home.kappes.space
       ## @param ingress.secrets If you're providing your own certificates, please use this to add the certificates as secrets
       ## key and certificate should start with -----BEGIN CERTIFICATE----- or
       ## -----BEGIN RSA PRIVATE KEY-----
