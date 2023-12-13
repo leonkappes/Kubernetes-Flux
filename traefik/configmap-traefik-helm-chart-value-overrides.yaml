@@ -666,9 +666,9 @@ data:
         #   insecure: false
         #
         # Enable the Proxy Protocol header parsing for the entry point
-         proxyProtocol:
-           trustedIPs: 
-             - "0.0.0.0/0"
+         #proxyProtocol:
+         #  trustedIPs: 
+          #   - "0.0.0.0/0"
       #  #   insecure: false
       websecure:
         ## -- Enable this entrypoint as a default entrypoint. When a service doesn't explicitly set an entrypoint it will only use this entrypoint.
