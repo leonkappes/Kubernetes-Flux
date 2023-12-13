@@ -87,7 +87,7 @@ data:
 
       # Enable SMTP. https://github.com/dani-garcia/vaultwarden/wiki/SMTP-configuration
       smtp:
-        enabled: true
+        enabled: false
         # SMTP hostname, required if SMTP is enabled.
         host: "mail.kappes.space"
         # SMTP sender e-mail address, required if SMTP is enabled.
@@ -117,7 +117,7 @@ data:
         ## SMTP password. Required is user is specified, ignored if no user provided.
         #password: ""
         ## Use existing secret for SMTP authentication. Keys are 'smtp-user' and 'smtp-password'.
-        existingSecret: vaultwarden-smtp
+        #existingSecret: vaultwarden-smtp
 
       ## Enable Yubico OPT authentication. https://github.com/dani-garcia/vaultwarden/wiki/Enabling-Yubikey-OTP-authentication
       yubico:
