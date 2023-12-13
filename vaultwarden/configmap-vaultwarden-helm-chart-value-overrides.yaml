@@ -75,7 +75,7 @@ data:
         ## Token for admin login, will be generated if not defined. https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page
         #token: 
         ## Use existing secret for the admin token. Key is 'admin-token'.
-        existingSecret: vaultwarden-token
+        existingSecret: admin-token
 
       emergency:
         # Allow any user to enable emergency access.
