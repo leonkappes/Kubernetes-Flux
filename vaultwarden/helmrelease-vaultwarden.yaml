@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: vaultwarden
-      version: 1.0.x
+      version: 1.x.x
       sourceRef:
         kind: HelmRepository
         name: vaultwarden
@@ -16,6 +16,6 @@ spec:
   timeout: 5m
   releaseName: vaultwarden
   valuesFrom:
-  - kind: ConfigMap
-    name: vaultwarden-helm-chart-value-overrides
-    valuesKey: values.yaml # This is the default, but best to be explicit for clarity
+    - kind: ConfigMap
+      name: vaultwarden-helm-chart-value-overrides
+      valuesKey: values.yaml # This is the default, but best to be explicit for clarity

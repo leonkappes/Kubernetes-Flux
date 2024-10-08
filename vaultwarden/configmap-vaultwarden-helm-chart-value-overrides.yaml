@@ -45,9 +45,6 @@ data:
       showPasswordHint: false
       ## Default organization name in invitation e-mails that are not coming from a specific organization.
       #defaultInviteName: ""
-      # Enable Websockets for notification. https://github.com/dani-garcia/vaultwarden/wiki/Enabling-WebSocket-notifications
-      # Redirect HTTP path "/notifications/hub" to port 3012. Ingress/IngressRoute controllers are automatically configured.
-      enableWebsockets: true
       # Enable Web Vault (static content). https://github.com/dani-garcia/vaultwarden/wiki/Disabling-or-overriding-the-Vault-interface-hosting
       enableWebVault: true
       # Enable Bitwarden Sends globally  
